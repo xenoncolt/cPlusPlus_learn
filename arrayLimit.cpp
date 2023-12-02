@@ -50,10 +50,12 @@ int main() {
 
     int maxElement = usrNum[0];
     int minElement = usrNum[0];
+    44 42 123 6122 22
+    0  1  2   3    4
 
     for (int j = 0; j < size; j++)
     {
-        if (maxElement < usrNum[j])
+        if (maxElement < usrNum[1])
         {
             maxElement = usrNum[j];
         }
