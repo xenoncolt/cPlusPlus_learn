@@ -1,3 +1,9 @@
+/*
+Name: Md. Shahriar Haque
+Id: 23-51730-2
+Section: O
+Course: Introduction to Programming Lab
+*/
 #include <iostream>
 #include <string>
 
