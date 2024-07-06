@@ -25,4 +25,5 @@ int main() {
     zero_small(a, b);
 
     cout << "After zero_small() function: " << a << ", " << b << endl;
+    system("pause");
 }

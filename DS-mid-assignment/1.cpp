@@ -63,5 +63,6 @@ int main() {
     */
     // after finished loop then go to missing next line
     cout << endl;
+    system("pause");
     return 0;
 }

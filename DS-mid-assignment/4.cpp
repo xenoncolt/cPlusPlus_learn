@@ -35,7 +35,7 @@ int main() {
     {
         for (int j = 0; j < 2; j++)
         {
-            sum[i][j] = matrix1[i][j] + matrix2[2][2] + matrix3[2][2] + matrix4[2][2];
+            sum[i][j] = matrix1[i][j] + matrix2[i][j] + matrix3[i][j] + matrix4[i][j];
         }
         
     }
@@ -50,4 +50,5 @@ int main() {
         cout << endl;
     }
 
+    system("pause");
 }

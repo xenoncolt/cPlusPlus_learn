@@ -34,8 +34,9 @@ Complex multiply(Complex a, Complex b) {
 
 Complex divide(Complex a, Complex b) {
     Complex store;
-    store.real = a.real / b.real;
-    store.imaginary = a.imaginary / b.imaginary;
+    double dominator = (b.real * b.real) + (b.imaginary * b.imaginary);
+    store.real = ((a.real * b.real) + (a.imaginary * b.imaginary)) / dominator;
+    store.imaginary = ((a.imaginary * b.real) - (a.real * b.imaginary)) / dominator;
     return store;
 }
 
@@ -56,13 +57,11 @@ int main() {
     Complex multi = multiply(a, b);
     Complex div = divide(a, b);
 
-    cout << "Sum of the two real number: " << sum.real << endl;
-    cout << "Sum of the two imaginary number: " << sum.imaginary << endl;
-    cout << "Subtraction of the two real number: " << subs.real << endl;
-    cout << "Subtraction of the two imaginary number: " << subs.imaginary << endl;
-    cout << "Multiplication of the two real number: " << multi.real << endl;
-    cout << "Multiplication of the two imaginary number: " << multi.imaginary << endl;
-    cout << "Division of the two real number: " << div.real << endl;
-    cout << "Division of the two imaginary number: " << div.imaginary << endl;
+    cout << "Sum: " << sum.real << " + " << sum.imaginary << "i" << endl;
+    cout << "Subtraction: " << subs.real << " + " << subs.imaginary << "i" << endl;
+    cout << "Multiplication: " << multi.real << " + " << multi.imaginary << "i" << endl;
+    cout << "Division: " << div.real << " + " << div.imaginary << "i" << endl;
+    system("pause");
+    return 0;
 }
 
